@@ -1,28 +1,28 @@
-/* Reset some default styles for better cross-browser consistency */
-body, h1, h2, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: #f8f8f8;
     color: #333;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 header {
-    background-color: #222;
+    background-color: #333;
     color: #fff;
     padding: 15px;
     text-align: center;
 }
 
-section {
-    margin: 20px;
+.info-box {
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 20px;
+    margin: 20px 0;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -33,22 +33,24 @@ h2 {
     padding-bottom: 5px;
 }
 
-p {
-    margin-bottom: 15px;
+form label {
+    display: block;
+    margin-bottom: 5px;
 }
 
-footer {
-    background-color: #222;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
+form input[type="text"],
+form input[type="password"] {
     width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }
 
-/* Style for the submit button in the form */
-input[type="submit"] {
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form input[type="submit"] {
     background-color: #337ab7;
     color: #fff;
     padding: 10px 15px;
@@ -58,6 +60,16 @@ input[type="submit"] {
     transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
+form input[type="submit"]:hover {
     background-color: #235a8e;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
