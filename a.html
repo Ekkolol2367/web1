@@ -26,8 +26,30 @@
 
     <section>
         <h2>Personal Information</h2>
-        <p>PRANAY MANIAR</p>
-        <p>SAPID: 60018210024</p>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="sapid">SAPID:</label>
+            <input type="text" id="sapid" name="sapid" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <p>Select Programming Languages:</p>
+            <input type="checkbox" id="java" name="programming_languages[]" value="Java">
+            <label for="java">Java</label>
+
+            <input type="checkbox" id="python" name="programming_languages[]" value="Python">
+            <label for="python">Python</label>
+
+            <input type="checkbox" id="javascript" name="programming_languages[]" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+            <!-- Add more checkboxes as needed -->
+
+            <input type="submit" value="Submit">
+        </form>
     </section>
 
     <section>
