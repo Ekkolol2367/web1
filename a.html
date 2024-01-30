@@ -20,48 +20,48 @@
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to Pranay Maniar's Website</h1>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Welcome to Pranay Maniar's Website</h1>
+        </header>
 
-    <section>
-        <h2>Personal Information</h2>
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <section class="info-box">
+            <h2>Personal Information</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="sapid">SAPID:</label>
-            <input type="text" id="sapid" name="sapid" required>
+                <label for="sapid">SAPID:</label>
+                <input type="text" id="sapid" name="sapid" required>
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
 
-            <p>Select Programming Languages:</p>
-            <input type="checkbox" id="java" name="programming_languages[]" value="Java">
-            <label for="java">Java</label>
+                <p>Select Programming Languages:</p>
+                <input type="checkbox" id="java" name="programming_languages[]" value="Java">
+                <label for="java">Java</label>
 
-            <input type="checkbox" id="python" name="programming_languages[]" value="Python">
-            <label for="python">Python</label>
+                <input type="checkbox" id="python" name="programming_languages[]" value="Python">
+                <label for="python">Python</label>
 
-            <input type="checkbox" id="javascript" name="programming_languages[]" value="JavaScript">
-            <label for="javascript">JavaScript</label>
+                <input type="checkbox" id="javascript" name="programming_languages[]" value="JavaScript">
+                <label for="javascript">JavaScript</label>
 
-            <!-- Add more checkboxes as needed -->
+                <input type="submit" value="Submit">
+            </form>
+        </section>
 
-            <input type="submit" value="Submit">
-        </form>
-    </section>
+        <section class="info-box">
+            <h2>Random Information</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
 
-    <section>
-        <h2>Random Information</h2>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-
-        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-            laborum.</p>
-    </section>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.</p>
+        </section>
+    </div>
 
     <footer>
         <p>&copy; 2024 Pranay Maniar. All rights reserved.</p>
